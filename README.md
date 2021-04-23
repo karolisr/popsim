@@ -2,4 +2,4 @@
 
 PopG clone and more!
 
-![](popsim_01.png){width="600"}
+![](popsim_01.png)
