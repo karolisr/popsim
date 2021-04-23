@@ -136,7 +136,7 @@ freeze.sh
 installer.sh
 
 # src/build/
-src/main/icons/
+# src/main/icons/
 src/main/resources/
 
 README.html
