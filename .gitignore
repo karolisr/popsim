@@ -127,3 +127,16 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+.idea/
+
+clean.sh
+compile_ui.sh
+freeze.sh
+installer.sh
+
+src/build/
+src/main/icons/
+src/main/resources/
+
+README.html
