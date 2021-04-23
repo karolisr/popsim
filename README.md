@@ -1,5 +1,5 @@
 # PopSim
 
-PopG clone and more!
+A PopG clone and more!
 
 ![](popsim_01.png)
