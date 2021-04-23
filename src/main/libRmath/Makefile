@@ -14,7 +14,7 @@ else
 		DIRLIB += ../resources/linux
 	endif
 	ifeq ($(UNAME_S),Darwin)
-		DIRLIB += ../resources/macos
+		DIRLIB += ../resources/mac
 	endif
 endif
 # ---------------------------------------------------------------------------

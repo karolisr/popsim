@@ -8,7 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
+# build/
 develop-eggs/
 dist/
 downloads/
@@ -135,7 +135,7 @@ compile_ui.sh
 freeze.sh
 installer.sh
 
-src/build/
+# src/build/
 src/main/icons/
 src/main/resources/
 
