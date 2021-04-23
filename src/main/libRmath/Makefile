@@ -1,33 +1,23 @@
-CC=gcc
-OPTS=-Ofast -DMATHLIB_STANDALONE -DR_NO_REMAP_RMATH
+CC = gcc
+OPTS = -Ofast -DMATHLIB_STANDALONE -DR_NO_REMAP_RMATH
 
 # Modified version of https://gist.github.com/sighingnow/deee806603ec9274fd47
 # Detect operating system in Makefile.
 # Author: He Tao
 # Date: 2015-05-30
-OSFLAG :=
+DIRLIB :=
 ifeq ($(OS),Windows_NT)
-	OSFLAG += windows
+	DIRLIB += ../resources/windows
 else
 	UNAME_S := $(shell uname -s)
 	ifeq ($(UNAME_S),Linux)
-		OSFLAG += linux
+		DIRLIB += ../resources/linux
 	endif
 	ifeq ($(UNAME_S),Darwin)
-		OSFLAG += macos
+		DIRLIB += ../resources/macos
 	endif
 endif
 # ---------------------------------------------------------------------------
-
-ifeq ($(OSFLAG),windows)
-	DIRLIB+=../resources/windows/
-endif
-ifeq ($(OSFLAG),linux)
-	DIRLIB+=../resources/linux/
-endif
-ifeq ($(OSFLAG),macos)
-	DIRLIB+=../resources/mac/
-endif
 
 all: libRmath.dylib
 
