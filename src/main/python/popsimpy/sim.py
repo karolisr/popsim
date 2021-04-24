@@ -161,7 +161,6 @@ class Expectation:
         self._ngen = 0
 
         self._history = QLineSeries()
-        self._history.setUseOpenGL(True)
         self._history.append(self.ngen, self.p)
 
     @property
