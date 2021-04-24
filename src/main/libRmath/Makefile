@@ -1,5 +1,5 @@
 CC = gcc
-OPTS = -Ofast -DMATHLIB_STANDALONE -DR_NO_REMAP_RMATH
+OPTS = -O3 -DMATHLIB_STANDALONE -DR_NO_REMAP_RMATH
 
 # Modified version of https://gist.github.com/sighingnow/deee806603ec9274fd47
 # Detect operating system in Makefile.
