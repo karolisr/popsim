@@ -130,10 +130,10 @@ dmypy.json
 
 .idea/
 
-clean.sh
-compile_ui.sh
-freeze.sh
-installer.sh
+# clean.sh
+# compile_ui.sh
+# freeze.sh
+# installer.sh
 
 # src/build/
 # src/main/icons/
