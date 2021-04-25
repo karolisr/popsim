@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
-rm -rf "./target/*"
+rm -rf "./target/Icon.iconset"
+rm -rf "./target/installer"
+rm -rf "./target/PopSim"
+rm -rf "./target/PyInstaller"
+rm -rf "./target/Icon.icns"
+rm -rf "./target/PopSim.app"
 
 find . -type f -name "._*" -delete
 find . -type f -name ".DS_Store" -delete
