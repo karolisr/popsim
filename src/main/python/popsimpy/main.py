@@ -9,7 +9,6 @@ from PyQt5.QtGui import QColor
 from PyQt5.QtGui import QPainter
 from PyQt5.QtGui import QPen
 from PyQt5.QtWidgets import QMainWindow
-from PyQt5.QtWidgets import QGraphicsView
 
 from popsimpy import PYQT_SIGNAL
 from popsimpy.sim import Pop
@@ -49,9 +48,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # QChartView
         self.cv = QChartView()
         self.cv.setRenderHint(QPainter.Antialiasing, True)
-        # self.cv.setOptimizationFlag(QGraphicsView.OptimizationFlag(2), False)
-        # self.cv.setOptimizationFlag(QGraphicsView.OptimizationFlag(4), False)
-        # self.cv.setOptimizationFlag(QGraphicsView.OptimizationFlag(8), False)
         self.verticalLayout.replaceWidget(self.tempWidget, self.cv)
 
         # Initial x, y axes
