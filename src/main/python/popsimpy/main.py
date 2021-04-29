@@ -95,10 +95,26 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.wAa_spinbox.valueChanged.connect(self.update_wAa)
         self.waa_spinbox.valueChanged.connect(self.update_waa)
 
+        self.actionControls.triggered.connect(self.show_hide_controls)
+        self.ctrlDockWidget.visibilityChanged.connect(
+            self.controls_visibility_changed)
+
         self.continue_btn.setDisabled(True)
         self.run_stop_btn.setFocus(True)
 
         self.new_run = True
+
+    def controls_visibility_changed(self):
+        if self.ctrlDockWidget.isHidden():
+            self.actionControls.setChecked(False)
+        else:
+            self.actionControls.setChecked(True)
+
+    def show_hide_controls(self):
+        if self.ctrlDockWidget.isHidden():
+            self.ctrlDockWidget.show()
+        else:
+            self.ctrlDockWidget.hide()
 
     def update_speed(self):
         self.timer.setInterval(interval(self.speed_dial.value()))
