@@ -138,5 +138,6 @@ dmypy.json
 # src/build/
 # src/main/icons/
 src/main/resources/
+build/
 
 README.html
