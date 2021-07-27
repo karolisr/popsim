@@ -1,6 +1,0 @@
-{
-    "app_name": "PopSim",
-    "author": "Karolis Ramanauskas",
-    "main_module": "src/main/python/popsimpy/main_fbs.py",
-    "version": "0.0.1"
-}
